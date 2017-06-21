@@ -1,5 +1,6 @@
 # narodmon-openwrt-script
-Скрипт отправки данных на сервер narodmon<br/>
+<b>Скрипт отправки данных на сервер narodmon</b><br/>
+<br/>
 Оборудование: D-Link DIR-825<br/>
 Прошивка: OpenWrt Chaos Calmer 15.05.1<br/>
 Необходимые пакеты: owserver, owshell<br/>
