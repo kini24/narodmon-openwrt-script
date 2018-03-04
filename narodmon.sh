@@ -50,7 +50,7 @@ if [ $LC -ge 2 ]
             cp /dev/null $TEMP_FILE
             break
         fi
-        if [ "$RESULT" == "ERROR NO CHANGES" ]
+        if [ "$RESULT" == "ERROR NO CHANGES" ] || [ "$RESULT" == "429 Too Many Requests" ]
           then
             cp /dev/null /tmp/narodmon
             break
