@@ -80,6 +80,10 @@ if [ $LINECOUNT -ge 2 ]
           then
             cp /dev/null $DATAFILE
             exit 1
+          elif [ "$RESULT" == "ERROR NO CHANGES" ] || [ "$RESULT" == "429 Too Many Requests" ]
+            then
+              cp /dev/null $DATAFILE
+              exit 1
           else
             MSG="Сервер $SERVER сообщил об ошибке: $RESULT"
             curl -s $URL -d chat_id=$ChatID -d text="$MSG"
